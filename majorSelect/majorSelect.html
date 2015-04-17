@@ -1,0 +1,129 @@
+<html>
+<head>
+    <title>中国大学专业选择</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./majorList.js"></script>
+    <script type="text/javascript" src="./majorSelect.js"></script>
+</head>
+<body>
+
+<input value='点击选择专业' id='selectMajor' type='text'>
+
+
+<div id="choose-box-wrapper">
+  <div id="choose-box">
+    <div id="choose-box-title">
+        <span>选择专业</span>
+    </div>
+    <p style="font-size:12px;text-indent:1em;"><span>搜索：</span><input id="searchMajor" type="text" value="搜索专业"/></p>
+    <div id="choose-a-majorClass">
+    </div>
+    <div id="choose-a-major">
+    </div>
+    <div id="choose-box-bottom">
+        <input type="botton" id='close' value="关闭" />
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+    #choose-box-wrapper{
+        width: 652px;
+        background-color:#000;
+        _filter:alpha(opacity=50);
+        _background-color: rgba(0, 0, 0，1);
+        padding:2px;
+        border-radius:5px;
+        display:none;
+    }
+    #choose-box{
+        border: 1px solid #005EAC;
+        width:650px;
+        background-color:white;
+    }
+    #choose-box-title{
+        background:#3777BC;
+        color: white;
+        padding: 4px 10px 5px;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+    }
+    #choose-box-title span{
+        font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;
+    }
+
+    #choose-a-majorClass, #choose-a-major{
+        margin:5px 8px 10px 8px;
+        border: 1px solid #C3C3C3;
+    }
+    #choose-a-majorClass a{
+        display:inline-block;
+        height: 18px;
+        line-height: 18px;
+        color:#005EAC;
+        text-decoration: none;
+        font-size: 9pt;
+        font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;
+        margin:2px 5px;
+        padding: 1px;
+        text-align: center;
+    }
+    #choose-a-majorClass a:hover{
+        text-decoration:underline;
+        cursor:pointer;
+    }
+    #choose-a-majorClass .choosen{
+        background-color: #005EAC;
+        color:white;
+    }
+    
+    #choose-a-major{
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 200px;
+    }
+    #choose-a-major a{
+        height: 18px;
+        line-height: 18px;
+        color:#005EAC;
+        text-decoration: none;
+        font-size: 9pt;
+        font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;
+        float: left;
+        width: 170px;
+        margin: 4px 0px 4px 12px ;
+        padding-left:10px;
+        background:url(http://ww2.sinaimg.cn/large/005ItG0Rjw1er8sxnnnlpg3004004019.gif) no-repeat 0 9px;
+    }
+    #choose-a-major a:hover{
+        background-color:#005EAC;
+        color:white;
+        cursor:pointer;
+    }
+    
+    #choose-box-bottom{
+        background: #F0F5F8;
+        padding: 8px;
+        text-align: right;
+        border-top: 1px solid #CCC;
+        height:40px;
+    }
+    #choose-box-bottom input{
+        vertical-align: middle;
+        text-align: center;
+        background-color:#005EAC;
+        color:white;
+        border-top: 1px solid #B8D4E8;
+        border-left: 1px solid #B8D4E8;
+        border-right: 1px solid #114680;
+        border-bottom: 1px solid #114680;
+        cursor: pointer;
+        width: 60px;
+        height: 25px;
+        margin-top: 6px;
+        margin-right: 6px;
+    }
+</style>
+</body>
+</html>
